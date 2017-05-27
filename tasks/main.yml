@@ -80,10 +80,6 @@
   always_run: yes
   tags: [configuration,nginx]
 
-- name: Stop the apache2 service
-  service: name=apache2 state=stopped enabled=no
-  tags: [service,nginx]
-
 - name: Start the nginx service
   service: name=nginx state=started enabled=yes
   tags: [service,nginx]
